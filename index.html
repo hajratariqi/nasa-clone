@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nasa</title>
+    <link rel="shortcut icon" href="./assets/nasa-logo.svg"type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Header -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-black px-0 px-sm-5 p-2"
+      >
+        <div class="container-fluid">
+          <!-- Left side: Toggle button and Explore link -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="d-flex align-items-baseline gap-2 justify-content-around">
+            <a class="navbar-brand d-none d-lg-block h5 fw-bolder m-0" href="#"
+              >Explore
+              <ul class="p-0 d-none d-lg-block">
+                <li class="nav-item dropdown list-unstyled">
+                  <a
+                    class="text-white fs-5"
+                    href="#"
+                    id="navbarDropdown"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-sort-down"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu bg-black"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li>
+                      <a class="dropdown-item h5 text-white" href="#">Home</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item h5 text-white" href="#"
+                        >Missing</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item h5 text-white" href="#"
+                        >Humans in Space</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item h5 text-white" href="#"
+                        >Earth & Climate</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item h5 text-white" href="#"
+                        >The Solar system</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item h5 text-white" href="#"
+                        >The Universe</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item h5 text-white" href="#"
+                        >Science</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item h5 text-white" href="#"
+                        >Aeronautics</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item h5 text-white" href="#"
+                        >Technology</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item h5 text-white" href="#"
+                        >Learning Resources</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item h5 text-white" href="#"
+                        >About Nasa</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item h5 text-white" href="#"
+                        >Espanol</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </a>
+
+            <form class="d-flex ms-4 d-none d-lg-flex">
+              <input
+                class="form-control bg-transparent border-secondary rounded-0"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+
+          <!-- Center: Logo -->
+          <div class="d-flex justify-content-center mx-auto">
+            <a class="d-lg-none" href="#"
+              ><img src="./assets/nasa-logo.svg" alt="Nasa Logo" width="60px"
+            /></a>
+            <a class="d-none d-lg-block" href="#"
+              ><img src="./assets/nasa-logo.svg" alt="Nasa Logo" width="60px"
+            /></a>
+          </div>
+
+          <a class="text-white" href="" target="_blank">
+            <i
+              class="fa-solid fa-magnifying-glass text-white d-lg-none b-block"
+            ></i>
+          </a>
+
+          <!-- Right side: Nav links and search form -->
+          <div
+            class="collapse navbar-collapse flex-grow-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown mx-lg-3 mt-4 mt-lg-0">
+                <a
+                  class="nav-link dropdown-toggle h5 text-white"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  News & Events
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown mx-lg-3">
+                <a
+                  class="nav-link dropdown-toggle h5 text-white"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Multimedia
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link h5 text-white fw-bolder"
+                  aria-current="page"
+                  href="https://plus.nasa.gov/"
+                  >NASA
+                  <i class="fa-solid fa-plus fs-6"></i>
+                  <button
+                    class="live-btn bg-transparent border-danger border-1 text-white fw-light"
+                  >
+                    LIVE
+                  </button>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                class="nav-link h5 text-white"
+                aria-current="page" 
+                target="_blank"
+                href="./contactUs.html"
+                >
+                Contact Us
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                class="nav-link h5 text-white"
+                aria-current="page" 
+                target="_blank"
+                href="#"
+                >
+                Home
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- carousel slider section-->
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <!-- first carousel -->
+          <div class="carousel-item active">
+            <div
+              class="position-absolute w-100"
+              style="
+                height: 700px;
+                background: linear-gradient(
+                  65.99deg,
+                  rgba(0, 0, 0, 0.9),
+                  transparent 99.04%
+                );
+                z-index: 100;
+              "
+            ></div>
+            <img
+              width="100%"
+              height="700px"
+              class="position-relative"
+              src="./assets/slider1.webp"
+              alt="Slider 1"
+            />
+            <div
+              class="carousel-caption container-xl mt-2 text-white start-0 p-3 p-sm-5 d-block text-start col-12"
+            >
+              <div
+                class="carousel-content z-index-100 col-sm-8 col-md-7 mt-5 mt-md-3"
+              >
+                <h1 class="display-2 fw-bolder" style="font-family: inherit">
+                  NASA's Boeing Crew Fight Test
+                </h1>
+                <p class="lead">
+                  Misson manager from NASA, boeing, and United Launch Alliance
+                  are working toward a launch opportunity at 12:25 p.m. EDT on
+                  Saturday, June 1
+                </p>
+                <button class="btn btn-danger fw-bolder fs-4 mt-2">
+                  Misson Updates
+                </button>
+              </div>
+
+              <!-- launch soon section  -->
+              <div
+                class="upcoming-box d-flex flex-sm-row flex-column justify-content-between gap-sm-5 col-sm-9"
+              >
+                <div class="border-top col-lg-3 pt-3 col-md-4">
+                  <p class="text-uppercase">Upcoming launch</p>
+                  <a
+                    class="text-white"
+                    href="https://www.nesdis.noaa.gov/news-events/noaas-goes-u"
+                    target="_blank"
+                  >
+                    <h6 class="text-capitalize fw-bolder">
+                      prefire
+                      <span class="mx-2 bg-danger p-1 rounded-circle">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                      </span>
+                    </h6>
+                  </a>
+                </div>
+
+                <div class="border-top col-lg-3 pt-3 col-md-4">
+                  <p class="text-uppercase">Upcoming launch</p>
+                  <a
+                    class="text-white"
+                    href="https://www.nasa.gov/news-release/nasa-shares-assignments-for-its-spacex-crew-9-space-station-mission/"
+                    target="_blank"
+                  >
+                    <h6 class="text-capitalize fw-bolder">
+                      Gose-u
+                      <span class="mx-2 bg-danger p-1 rounded-circle">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                      </span>
+                    </h6>
+                  </a>
+                </div>
+
+                <div class="border-top col-lg-3 pt-3 col-md-4">
+                  <p class="text-uppercase">Upcoming launch</p>
+                  <a
+                    class="text-white"
+                    href="https://www.nasa.gov/get-involved/"
+                    target="_blank"
+                  >
+                    <h6 class="text-capitalize fw-bolder">
+                      nasa europa cliper
+                      <span class="mx-2 bg-danger p-1 rounded-circle">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                      </span>
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <!-- round image container -->
+              <div
+                class="round-images d-flex justify-content-between gap-3 col-2 position-absolute end-0 bottom-5 me-5"
+              >
+                <div class="box">
+                  <div class="loader"></div>
+                  <img
+                    src="./assets/slider1.webp"
+                    class="rounded-circle"
+                    width="50px"
+                    height="50px"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="./assets/slider2.webp"
+                    class="rounded-circle"
+                    width="50px"
+                    height="50px"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="./assets/slider3.webp"
+                    class="rounded-circle"
+                    width="50px"
+                    height="50px"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="./assets/slider4.webp"
+                    class="rounded-circle"
+                    width="50px"
+                    height="50px"
+                    alt="" />
+                </div>
+                <div
+                  class="small-round-box rounded-circle text-center d-flex align-items-center justify-content-center p-3 fs-5"
+                  width="50px"
+                >
+                  <i class="fa-solid fa-pause"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- secound carousel -->
+          <div class="carousel-item">
+            <div
+              class="position-absolute w-100"
+              style="
+                height: 700px;
+                background: linear-gradient(
+                  65.99deg,
+                  rgba(0, 0, 0, 0.9),
+                  transparent 99.04%
+                );
+                z-index: 100;
+              "
+            ></div>
+            <img
+              width="100%"
+              height="700px"
+              9lass="position-relative"
+              src="./assets/slider2.webp"
+              alt="Slider 1"
+              alt="..."
+            />
+            <div
+              class="carousel-caption container-xl text-white start-0 p-2 p-sm-5 d-block text-start col-12"
+            >
+              <div class="carousel-content col-sm-12 col-md-6 mt-5 mt-md-3">
+                <h1 class="display-2 fw-bolder" style="font-family: inherit">
+                  Space in Your Life
+                </h1>
+                <p class="lead">
+                  NASA's Technology Transfer program ensures that Technologies
+                  developed for missions in exploration and Discovery are
+                  broadly available to the public, maximizing the benefit to the
+                  nation
+                </p>
+                <button class="btn btn-danger fw-bolder fs-4 mt-2">
+                  NASA Spinoff
+                </button>
+              </div>
+
+              <!-- launch soon section  -->
+              <div
+                class="upcoming-box d-flex flex-sm-row flex-column justify-content-between gap-sm-3 col-sm-9"
+              >
+                <div class="border-top col-lg-4 col-md-5 pt-3">
+                  <p class="text-uppercase">COMMERCIAL POTENTIAL</p>
+                  <h6 class="text-capitalize fw-bolder">
+                    NASA's Patent Portfolio
+                    <span class="mx-2 bg-danger p-1 rounded-circle">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                    </span>
+                  </h6>
+                </div>
+                <div class="border-top col-lg-4 col-md-5 pt-3">
+                  <p class="text-uppercase">Technologies application</p>
+                  <h6 class="text-capitalize fw-bolder">
+                    NASA's software Catalog
+                    <span class="mx-2 bg-danger p-1 rounded-circle">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                    </span>
+                  </h6>
+                </div>
+
+                <div class="border-top col-lg-4 col-md-6 pt-3">
+                  <p class="text-uppercase">New Venture creation</p>
+                  <h6 class="text-capitalize fw-bolder">
+                    Technologies Transfer Expansion
+                    <span class="mx-2 bg-danger p-1 rounded-circle">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                    </span>
+                  </h6>
+                </div>
+              </div>
+
+              <!-- round image container -->
+              <div
+                class="round-images d-flex justify-content-between gap-3 col-2 position-absolute end-0 bottom-5 me-5"
+              >
+                <div class="box">
+                  <img
+                    src="./assets/slider1.webp"
+                    class="rounded-circle"
+                    width="50px"
+                    height="50px"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <div class="loader"></div>
+                  <img
+                    src="./assets/slider2.webp"
+                    class="rounded-circle"
+                    width="50px"
+                    height="50px"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="./assets/slider3.webp"
+                    class="rounded-circle"
+                    width="50px"
+                    height="50px"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="./assets/slider4.webp"
+                    class="rounded-circle"
+                    width="50px"
+                    height="50px"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="small-round-box rounded-circle text-center d-flex align-items-center justify-content-center p-3 fs-5"
+                  width="50px"
+                >
+                  <i class="fa-solid fa-pause"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third carousel -->
+          <div class="carousel-item">
+            <div
+              class="position-absolute w-100"
+              style="
+                height: 700px;
+                background: linear-gradient(
+                  65.99deg,
+                  rgba(0, 0, 0, 0.9),
+                  transparent 99.04%
+                );
+                z-index: 100;
+              "
+            ></div>
+            <img
+              width="100%"
+              height="700px"
+              class="position-relative"
+              src="./assets/slider3.webp"
+              alt="Slider 1"
+              alt=""
+            />
+            <div
+              class="carousel-caption container-xl text-white start-0 p-2 p-sm-5 d-block text-start col-12 pb-0"
+            >
+              <div class="carousel-content col-md-9 mt-5 mt-md-5">
+                <h1 class="display-2 fw-bolder" style="font-family: inherit">
+                  Human Exploration in Space
+                </h1>
+                <p class="lead">
+                  Building of NASA's 60 years exploration experience and more
+                  than 20 years of continuous human presence the International
+                  space station in low Earth orbit, we will extend humanity
+                  father into space than ever before.
+                </p>
+                <button
+                  class="btn btn-danger col-sm-5 col-12 fw-bolder fs-4 mt-2"
+                >
+                  Why WE Go
+                </button>
+              </div>
+
+              <!-- launch soon section  -->
+              <div
+                class="upcoming-box d-flex flex-sm-row flex-column justify-content-between gap-sm-2 col-sm-9"
+              >
+                <div class="border-top col-lg-3 pt-3">
+                  <p class="text-uppercase">Defination</p>
+                  <h6 class="text-capitalize fw-bolder">
+                    low Earth orbit
+                    <span class="mx-2 bg-danger p-1 rounded-circle">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                    </span>
+                  </h6>
+                </div>
+
+                <div class="border-top col-lg-3 pt-3">
+                  <p class="text-uppercase">Destination</p>
+                  <h6 class="text-capitalize fw-bolder">
+                    Earth's moon
+                    <span class="mx-2 bg-danger p-1 rounded-circle">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                    </span>
+                  </h6>
+                </div>
+
+                <div class="border-top col-lg-3 pt-3">
+                  <p class="text-uppercase">Distination</p>
+                  <h6 class="text-capitalize fw-bolder">
+                    Mars
+                    <span class="mx-2 bg-danger p-1 rounded-circle">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                    </span>
+                  </h6>
+                </div>
+              </div>
+
+              <!-- round image container -->
+              <div
+                class="round-images d-flex justify-content-between gap-3 col-2 position-absolute end-0 bottom-5 me-5"
+              >
+                <div class="box">
+                  <img
+                    src="./assets/slider1.webp"
+                    class="rounded-circle"
+                    width="50px"
+                    height="50px"
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="./assets/slider2.webp"
+                    class="rounded-circle"
+                    width="50px"
+                    height="50px"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <div class="loader"></div>
+                  <img
+                    src="./assets/slider3.webp"
+                    class="rounded-circle"
+                    width="50px"
+                    height="50px"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="./assets/slider4.webp"
+                    class="rounded-circle"
+                    width="50px"
+                    height="50px"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="small-round-box rounded-circle text-center d-flex align-items-center justify-content-center p-3 fs-5"
+                  width="50px"
+                >
+                  <i class="fa-solid fa-pause"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fourth  carousel -->
+          <div class="carousel-item">
+            <div
+              class="position-absolute w-100"
+              style="
+                height: 700px;
+                background: linear-gradient(
+                  65.99deg,
+                  rgba(0, 0, 0, 0.9),
+                  transparent 99.04%
+                );
+                z-index: 100;
+              "
+            ></div>
+            <img
+              width="100%"
+              height="700px"
+              class="position-relative"
+              src="./assets/slider4.webp"
+              alt="Slider 1"
+              alt=""
+            />
+            <div
+              class="carousel-caption container-xl text-white start-0 p-2 p-sm-5 d-block text-start col-12 pb-0"
+            >
+              <div class="carousel-content col-md-12 col-lg-8 mt-5 mt-md-0">
+                <h1 class="display-2 fw-bolder" style="font-family: inherit">
+                  NASA's Named 2023 Best place to Work
+                </h1>
+                <p class="lead">
+                  For the 12th year in a row, the Partnership for public service
+                  named NASA the best place to work among large agencies in the
+                  federal goverment.
+                </p>
+                <button
+                  class="btn btn-danger col-sm-4 col-12 fw-bolder fs-4 mt-2"
+                >
+                  Learned more
+                </button>
+              </div>
+
+              <!-- launch soon section  -->
+              <div
+                class="upcoming-box d-flex flex-sm-row flex-column justify-content-between gap-sm-4 col-sm-9"
+              >
+                <div class="border-top col-lg-4 col-md-5 col-sm-5 pt-3">
+                  <p class="text-uppercase">More than astronauts</p>
+                  <h6 class="text-capitalize fw-bolder">
+                    People of NASA
+                    <span class="mx-2 bg-danger p-1 rounded-circle">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                    </span>
+                  </h6>
+                </div>
+
+                <div class="border-top col-lg-4 col-md-5 col-sm-5 pt-3">
+                  <p class="text-uppercase">for the benefit of all</p>
+                  <h6 class="text-capitalize fw-bolder">
+                    NASA Missions
+                    <span class="mx-2 bg-danger p-1 rounded-circle">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                    </span>
+                  </h6>
+                </div>
+
+                <div class="border-top col-lg-4 col-md-5 col-sm-5 pt-3">
+                  <p class="text-uppercase">contribute to nasa mission</p>
+                  <h6 class="text-capitalize fw-bolder">
+                    Join Us
+                    <span class="mx-2 bg-danger p-1 rounded-circle">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                    </span>
+                  </h6>
+                </div>
+              </div>
+
+              <!-- round image container -->
+              <div
+                class="round-images d-flex justify-content-between gap-3 col-2 position-absolute end-0 bottom-5 me-5"
+              >
+                <div class="box">
+                  <img
+                    src="./assets/slider1.webp"
+                    class="rounded-circle"
+                    width="50px"
+                    height="50px"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="./assets/slider2.webp"
+                    class="rounded-circle"
+                    width="50px"
+                    height="50px"
+                    alt=""
+                  />
+                </div>
+                <div class="box">
+                  <img
+                    src="./assets/slider3.webp"
+                    class="rounded-circle"
+                    width="50px"
+                    height="50px"
+                    alt=""
+                  />
+                </div>
+
+                <div class="box">
+                  <div class="loader"></div>
+                  <img
+                    src="./assets/slider4.webp"
+                    class="rounded-circle"
+                    width="50px"
+                    height="50px"
+                    alt=""
+                  />
+                </div>
+
+                <div
+                  class="small-round-box rounded-circle text-center d-flex align-items-center justify-content-center p-3 fs-5"
+                  width="50px"
+                >
+                  <i class="fa-solid fa-pause"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured News section -->
+      <div class="container p-5">
+        <div
+          class="d-flex justify-content-between align-items-center flex-column flex-md-row gap-3"
+        >
+          <h1 class="display-5 fw-bolder text-black">Featured News</h1>
+          <h3 class="fw-bolder d-flex align-items-center text-black">
+            More NASA News
+            <div
+              class="bg-danger p-2 d-flex p-1 text-white text-center rounded-circle mx-2"
+              style="height: 27px; width: 26px"
+            >
+              <i class="fa-solid fa-arrow-trend-up" style="font-size: 12px"></i>
+            </div>
+          </h3>
+        </div>
+
+        <div class="row mt-5 gap-md-0 gap-sm-3">
+          <div class="col-lg-6 col-md-12 position-relative p-0 px-md-2">
+            <div class="dark-gradient-image" style="height: 370px"></div>
+            <div>
+              <img
+                width="100%"
+                height="370px"
+                class=""
+                src="./assets/earth.webp"
+                alt=""
+              />
+            </div>
+            <div
+              class="carousel-caption text-start d-flex flex-column justify-content-between p-3"
+              style="bottom: 0px; left: 0%; width: 98%; height: 370px"
+            >
+              <div>
+                <p class="text-uppercase letter-spacing mb-1">
+                  Article
+                  <span class="border p-1 rounded-circle ps-2"
+                    ><i class="fa-regular fa-bookmark"></i
+                  ></span>
+                </p>
+              </div>
+              <div>
+                <p class="text-uppercase letter-spacing mb-1">4 min read</p>
+                <h5 class="text-capitalize fw-bolder">
+                  Discovery Alert: Spock's Home Planet Goes 'Poof'
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-6 mt-lg-0 mt-1 position-relative p-0 px-md-2"
+          >
+            <div class="dark-gradient-image" style="height: 370px"></div>
+            <div>
+              <img
+                width="100%"
+                height="370px"
+                class=""
+                src="./assets/nasa-image.webp"
+                alt=""
+              />
+            </div>
+            <div
+              class="carousel-caption text-start d-flex flex-column justify-content-between p-3"
+              style="bottom: 0px; left: 0%; width: 98%; height: 370px"
+            >
+              <div>
+                <p class="text-uppercase letter-spacing mb-1">
+                  New Release
+                  <span class="border p-1 rounded-circle ps-2"
+                    ><i class="fa-regular fa-bookmark"></i
+                  ></span>
+                </p>
+              </div>
+              <div>
+                <p class="text-uppercase letter-spacing mb-1">2 min read</p>
+                <h5 class="text-capitalize fw-bolder">
+                  NASA to provide Coverage of Progress 88 Launch, Space Station
+                  Docking
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-lg-0 mt-1 p-0" style="height: 370px">
+            <div class="position-relative">
+              <div style="height: 180px" class="dark-gradient-image"></div>
+              <div>
+                <img
+                  width="100%"
+                  height="180"
+                  class="mb-3"
+                  src="./assets/ar.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="carousel-caption text-start d-flex flex-column justify-content-between px-3 pt-0"
+                style="bottom: 0px; left: 0%; width: 98%; height: 180px"
+              >
+                <div>
+                  <p class="text-uppercase letter-spacing mb-1">
+                    Article<span class="border p-1 rounded-circle ps-2"
+                      ><i class="fa-regular fa-bookmark"></i
+                    ></span>
+                  </p>
+                </div>
+                <div>
+                  <p class="text-uppercase letter-spacing mb-1">4 min read</p>
+                  <h5 class="text-capitalize fw-bolder">
+                    NASA Lunch small Climate Satellite to Study Earth's Poles
+                  </h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="position-relative">
+              <div style="height: 180px" class="dark-gradient-image"></div>
+              <div>
+                <img
+                  width="100%"
+                  height="180"
+                  class=""
+                  src="./assets/prefirelaunch.webp"
+                  alt=""
+                />
+              </div>
+              <div
+                class="carousel-caption text-start d-flex flex-column justify-content-between px-3 pb-0 pt-2"
+                style="bottom: 0px; left: 0%; width: 98%; height: 180px"
+              >
+                <div>
+                  <p class="text-uppercase letter-spacing mb-1">
+                    New release<span class="border p-1 rounded-circle ps-2"
+                      ><i class="fa-regular fa-bookmark"></i
+                    ></span>
+                  </p>
+                </div>
+                <div>
+                  <p class="text-uppercase letter-spacing mb-1">4 min read</p>
+                  <h5 class="text-capitalize fw-bolder">
+                    NASA Lunches small climate Statellite to study earth's poles
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- bottom cards section -->
+          <div class="row p-0 mt-4 gap-md-0 gap-sm-3 gap-4">
+            <div
+              class="d-flex justify-content-between align-items-center col-lg-3 col-md-6 p-0"
+            >
+              <div class="me-3">
+                <img
+                  width="77px"
+                  height="80px"
+                  class="rounded-circle"
+                  src="./assets/dinkyselammulti-fullres.webp"
+                />
+              </div>
+              <div>
+                <p class="text-uppercase letter-spacing mb-1">4 min read</p>
+                <h6 class="fw-bolder my-2">
+                  NASA Lucky images reveal asteroid dinkinesh to be surprisingly
+                  complex
+                </h6>
+                <p class="text-uppercase letter-spacing mb-1">
+                  <span class="border p-1 rounded-circle ps-2 me-1"
+                    ><i class="fa-regular fa-bookmark"></i
+                  ></span>
+                  Article
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="d-flex justify-content-between align-items-center col-lg-3 col-md-6 p-0"
+            >
+              <div class="me-3">
+                <img
+                  width="77px"
+                  height="80px"
+                  class="rounded-circle"
+                  src="./assets/osiris-apex.webp"
+                />
+              </div>
+              <div>
+                <p class="text-uppercase letter-spacing mb-1">4 min read</p>
+                <h6 class="fw-bolder my-2">
+                  NASA OSIRIS-APEX Unscathed After Searing Pass of Sun
+                </h6>
+                <p class="text-uppercase letter-spacing mb-1">
+                  <span class="border p-1 rounded-circle ps-2 me-1"
+                    ><i class="fa-regular fa-bookmark"></i
+                  ></span>
+                  Article
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="d-flex justify-content-between align-items-center col-lg-3 col-md-6 p-0"
+            >
+              <div class="mx-2">
+                <img
+                  width="77px"
+                  height="80px"
+                  class="rounded-circle"
+                  src="./assets/hubble-.jpg"
+                />
+              </div>
+              <div>
+                <p class="text-uppercase letter-spacing mb-1">2 min read</p>
+                <h6 class="fw-bolder my-2">
+                  Hubble Captures a Bright Spiral in the Queen's Hair
+                </h6>
+                <p class="text-uppercase letter-spacing mb-1">
+                  <span class="border p-1 rounded-circle ps-2 me-1"
+                    ><i class="fa-regular fa-bookmark"></i
+                  ></span>
+                  Article
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="d-flex justify-content-between align-items-center col-lg-3 col-md-6 p-0"
+            >
+              <div class="me-3">
+                <img
+                  width="77px"
+                  height="80px"
+                  class="rounded-circle"
+                  src="./assets/asian.webp"
+                />
+              </div>
+              <div>
+                <p class="text-uppercase letter-spacing mb-1">2 min read</p>
+                <h6 class="fw-bolder my-2">
+                  Asian-American and Native Hawaiin Pacific Islander Heritage
+                  Month
+                </h6>
+                <p class="text-uppercase letter-spacing mb-1">
+                  <span class="border p-1 rounded-circle ps-2 me-1"
+                    ><i class="fa-regular fa-bookmark"></i
+                  ></span>
+                  Article
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Discovery section -->
+      <div class="col-12 mb-5 position-relative">
+        <div class="dark-gradient-image" style="height: 800px"></div>
+
+        <div>
+          <img height="800px" width="100%" src="./assets/section-image.jpg" />
+        </div>
+
+        <div
+          style="bottom: 15%; left: 20%"
+          class="carousel-caption container-xl mt-2 text-white start-0 p-3 p-sm-5 d-block text-start col-12"
+        >
+          <div class="col-lg-7">
+            <h1 class="fw-bolder display-1" style="font-family: publicSans">
+              Soaring into History
+            </h1>
+            <p class="my-5">
+              In this episode of the Small Steps, Giant Leaps podcast, meet
+              Teddy Tzanetos, project manager for the Ingenuity Mars helicopter,
+              a record-setting demonstration mission that soared into history as
+              the first spacecraft to perform powered, controlled flight on
+              another planet.
+            </p>
+            <p>
+              <a
+                href="https://www.nasa.gov/podcasts/small-steps-giant-leaps/small-steps-giant-leaps-episode-130-ingenuitys-final-flight-lessons-learned/"
+                class="text-white fs-4 fw-bolder"
+                >Listen
+              </a>
+              <span
+                class="ps-1 bg-danger p-1 rounded-circle d-inline-block"
+                style="height: 18px; width: 19px"
+              >
+                <i
+                  class="fa-solid fa-arrow-trend-up position-absolute"
+                  style="font-size: 10px"
+                ></i
+              ></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Welcome to the Universe section -->
+      <div class="container mb-5 col-lg-12 col-md-12 col-sm-8">
+        <div
+          class="d-flex justify-content-sm-between justify-content-around align-items-center flex-wrap"
+        >
+          <h1 class="fw-bolder">Our Solar System</h1>
+          <h4 class="fw-bolder">
+            More to Explore
+            <span
+              class="ps-1 bg-danger p-1 rounded-circle d-inline-block"
+              style="height: 18px; width: 19px"
+            >
+              <i
+                class="fa-solid fa-arrow-trend-up position-absolute text-white"
+                style="font-size: 10px"
+              ></i
+            ></span>
+          </h4>
+        </div>
+
+        <div
+          class="mt-5 d-flex justify-content-between flex-wrap align-items-center"
+        >
+          <div class="col-lg-3 col-md-6 position-relative mt-lg-0 mt-4 4 p-2">
+            <img
+              width="100%"
+              height="550px"
+              src="./assets/earths.webp"
+              style="filter: brightness(0.5)"
+            />
+            <div class="carousel-caption start-0 text-white text-start p-3">
+              <h2 class="fw-bolder">
+                Planets
+                <i
+                  class="fa-solid fa-arrow-right text-white p-1 bg-danger rounded-circle"
+                  style="font-size: 14px"
+                ></i>
+              </h2>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 position-relative mt-lg-0 mt-4 p-2">
+            <img
+              width="100%"
+              height="550px"
+              src="./assets/card-image-1.jpg"
+              style="filter: brightness(0.5)"
+            />
+            <div class="carousel-caption start-0 text-white text-start p-3">
+              <h2 class="fw-bolder">
+                Moon
+                <i
+                  class="fa-solid fa-arrow-right text-white p-1 bg-danger rounded-circle"
+                  style="font-size: 14px"
+                ></i>
+              </h2>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 position-relative mt-lg-0 mt-4 4 p-2">
+            <img
+              width="100%"
+              height="550px"
+              src="./assets/Asteroid_Bennu-1.webp"
+              style="filter: brightness(0.5)"
+            />
+            <div class="carousel-caption start-0 text-white text-start p-3">
+              <h2 class="fw-bolder">
+                Asteroids
+                <i
+                  class="fa-solid fa-arrow-right text-white p-1 bg-danger rounded-circle"
+                  style="font-size: 14px"
+                ></i>
+              </h2>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 position-relative mt-lg-0 mt-4 4 p-2">
+            <img
+              width="100%"
+              height="550px"
+              src="./assets/cart-image-2.webp"
+              style="filter: brightness(0.5)"
+            />
+            <div class="carousel-caption start-0 text-white text-start p-3">
+              <h2 class="fw-bolder">
+                Skywatching
+                <i
+                  class="fa-solid fa-arrow-right text-white p-1 bg-danger rounded-circle"
+                  style="font-size: 14px"
+                ></i>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Earth Information Center Section -->
+      <div class="col-12 mb-5 position-relative">
+        <div class="dark-gradient-image" style="height: 900px"></div>
+
+        <div>
+          <img
+            height="900px"
+            width="100%"
+            src="./assets/exploring-world.webp"
+          />
+        </div>
+
+        <div
+          style="bottom: 15%; left: 20%"
+          class="carousel-caption container-xl mt-2 text-white start-0 p-3 p-sm-5 d-block text-start col-12"
+        >
+          <div class="col-lg-6">
+            <h1 class="fw-bolder display-1" style="font-family: publicSans">
+              Earth Information Center
+            </h1>
+            <p class="my-5">
+              For more than 50 years, NASA satellites have provided data on
+              Earth's land, water, air, temperature, and climate. NASA's Earth
+              Information Center allows visitors to see how our planet is
+              changing in six key areas: sea level rise and coastal impacts,
+              health and air quality, wildfires, greenhouse gases, sustainable
+              energy, and agriculture.
+            </p>
+            <p>
+              <a
+                href="https://www.nasa.gov/podcasts/small-steps-giant-leaps/small-steps-giant-leaps-episode-130-ingenuitys-final-flight-lessons-learned/"
+                class="text-white fs-4 fw-bolder"
+                >Start Exploring</a
+              >
+              <span
+                class="ps-1 bg-danger p-1 rounded-circle d-inline-block"
+                style="height: 18px; width: 19px"
+              >
+                <i
+                  class="fa-solid fa-arrow-trend-up position-absolute"
+                  style="font-size: 10px"
+                ></i
+              ></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-------------------------------------------- Image Of The Day Section --------------------------------------------------------->
+      <div class="container p-md-0 p-4">
+        <div>
+          <div>
+            <p class="text-uppercase letter-spacing mb-1">Today</p>
+            <h1 class="fw-bolder mb-5">Image Of The Day</h1>
+          </div>
+          <div
+            class="row justify-content-between flex-md-row flex-column-reverse"
+          >
+            <div class="col-lg-4">
+              <h5 class="mt-5 mb-3 fw-bolder">Webb Spots a Starburst</h5>
+              <p style="font-family: publicSans">
+                Featured in this new image from the NASA/ESA/CSA James Webb
+                Space Telescope is the dwarf galaxy NGC 4449. This galaxy, also
+                known as Caldwell 21, resides roughly 12.5 million light-years
+                away in the constellation Canes Venatici. NGC 4449 has been
+                forming stars for several billion years, but it is currently
+                experiencing a period of star formation at a much higher rate
+                than in the past. Such unusually explosive and intense star
+                formation activity is called a starburst and for that reason NGC
+                4449 is known as a starburst galaxy. Starbursts usually occur in
+                the central regions of galaxies, but NGC 4449 displays more
+                widespread star formation activity, and the very youngest stars
+                are observed both in the nucleus and in streams surrounding the
+                galaxy. It’s likely that the current widespread starburst was
+                triggered by interaction or merging with a smaller companion;
+                indeed, astronomers think NGC 4449’s star formation has been
+                influenced by interactions with several of its neighbors.
+              </p>
+              <p>
+                <a
+                  href="https://www.nasa.gov/podcasts/small-steps-giant-leaps/small-steps-giant-leaps-episode-130-ingenuitys-final-flight-lessons-learned/"
+                  class="text-black fw-bolder"
+                  >Browse Image Archive</a
+                >
+                <span
+                  class="text-white ps-1 bg-danger p-1 rounded-circle d-inline-block"
+                  style="height: 18px; width: 19px"
+                >
+                  <i
+                    class="fa-solid fa-arrow-right position-absolute"
+                    style="font-size: 10px"
+                  ></i
+                ></span>
+              </p>
+            </div>
+
+            <div class="col-lg-7 mb-3 position-relative" style="height: 444px">
+              <div>
+                <img
+                  height="444px"
+                  width="100%"
+                  src="./assets/nasa-image-2.webp"
+                />
+              </div>
+              <div
+                class="carousel-caption text-white text-end end-0 p-5"
+                style="bottom: 80%"
+              >
+                <i
+                  class="fa-solid fa-arrows-down-to-line text-white bg-primary p-2 rounded-circle"
+                ></i>
+              </div>
+              <p class="d-flex justify-content-end mt-2">
+                <a
+                  href="https://www.nasa.gov/image-detail/fireworks-of-stellar-starbursts/"
+                  class="text-black fw-bolder"
+                  >View image</a
+                >
+                <span
+                  class="text-white text-center ps-1 bg-danger p-1 rounded-circle d-inline-block"
+                  style="height: 20px; width: 20px"
+                >
+                  <i
+                    class="fa-solid fa-arrow-right position-absolute"
+                    style="right: 18px; font-size: 12px"
+                  ></i>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <h1 class="fw-bolder">More NASA Images</h1>
+
+          <div class="row mt-5">
+            <div class="col-lg-4">
+              <div class="row">
+                <div class="col-7 p-0">
+                  <img
+                    height="270px"
+                    width="100%"
+                    src="./assets/image_feature.webp"
+                  />
+                </div>
+
+                <div class="col-5">
+                  <div class="col pb-1">
+                    <img
+                      height="135"
+                      width="100%"
+                      src="./assets/nasa-image3.webp"
+                    />
+                  </div>
+
+                  <div class="col pb-1">
+                    <img
+                      height="135"
+                      width="100%"
+                      src="./assets/nasa-image-4.jpg"
+                    />
+                  </div>
+                </div>
+                <div class="p-0">
+                  <h6 class="fw-bolder">Training To Be An Astronaut Gallery</h6>
+                  <p class="text-uppercase letter-spacing text-secondary">
+                    38 Images
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!------ secound cart ------>
+
+            <div class="col-lg-4 d-lg-block d-none">
+              <div class="row">
+                <div class="col-7 p-0">
+                  <img height="270px" width="100%" src="./assets/person.webp" />
+                </div>
+
+                <div class="col-5">
+                  <div class="col pb-1">
+                    <img
+                      height="135"
+                      width="100%"
+                      src="./assets/nasa-person.webp"
+                    />
+                  </div>
+
+                  <div class="col pb-1">
+                    <img
+                      height="135"
+                      width="100%"
+                      src="./assets/nasa-person3.webp"
+                    />
+                  </div>
+                </div>
+                <div class="p-0">
+                  <h6 class="fw-bolder">
+                    Asian American and Native Hawaiian Pacific Islander Heritage
+                    Month Gallery
+                  </h6>
+                  <p class="text-uppercase letter-spacing text-secondary">
+                    127 Images
+                  </p>
+                </div>
+              </div> b  
+            </div>
+
+            <!------ third cart ------>
+
+            <div class="col-lg-4 d-lg-block d-none">
+              <div class="row">
+                <div class="col-7 p-0">
+                  <img
+                    height="270px"
+                    width="100%"
+                    src="./assets/nasa-team.jpg"
+                  />
+                </div>
+
+                <div class="col-5">
+                  <div class="col pb-1">
+                    <img
+                      height="135"
+                      width="100%"
+                      src="./assets/nasa-full-team.jpg"
+                    />
+                  </div>
+
+                  <div class="col pb-1">
+                    <img
+                      height="135"
+                      width="100%"
+                      src="./assets/nasa-team-2.jpg"
+                    />
+                  </div>
+                </div>
+
+                <div class="p-0">
+                  <h6 class="fw-bolder">Artemis II Gellary</h6>
+                  <p class="text-uppercase letter-spacing text-secondary">
+                    41 Images
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- close container -->
+
+      <!------------------------------------------- Explore the Universe section ------------------------------------------------------------->
+
+      <div class="col-12 mb-5 position-relative">
+        <div>
+          <img
+            height="560px"
+            width="100%"
+            src="./assets/webb-tarantula-neb.webp"
+          />
+        </div>
+
+        <div
+          style="bottom: 1%; left: 20%"
+          class="carousel-caption container-xl mt-2 text-white start-0 p-3 d-block text-start"
+        >
+          <div class="col-md-5 my-4">
+            <h1 class="fw-bolder display-3" style="font-family: publicSans">
+              Explore the Universe from your Inbox
+            </h1>
+            <h6 class="my-5 fw-bolder">
+              Stay up-to-date on the latest news from NASA–from Earth to the
+              Moon, the Solar System and beyond.
+            </h6>
+            <h6 class="mb-4">We will never share your email address.</h6>
+            <p>
+              <a
+                href="https://lp.constantcontactpages.com/su/hHN32CZ/nasagov"
+                class="text-white fw-bolder lead"
+                >Sign Up</a
+              >
+              <span
+                class="ps-1 bg-danger p-1 rounded-circle d-inline-block"
+                style="height: 18px; width: 19px"
+              >
+                <i
+                  class="fa-solid fa-arrow-right position-absolute"
+                  style="font-size: 12px"
+                ></i
+              ></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-------------------------------------  More Topics from NASA  ----------------------------------------->
+      <section></section>
+      <div class="container mb-5 col-lg-12 col-md-12 col-sm-8 my-5">
+          <h1 class="fw-bolder">More Topics from NASA</h1>
+          
+        <div class="d-flex justify-content-between flex-wrap align-items-center mt-5">
+          <div class="col-lg-3 col-md-6 position-relative mt-lg-0 mt-4 4 p-2">
+            <img
+              width="100%"
+              height="550px"
+              src="./assets/nasa-image-5.webp"
+              style="filter: brightness(0.5)"/>
+              <div class="carousel-caption start-0 text-white text-start p-3 col-12">
+                <div class="d-flex justify-content-between pe-0 align-items-center">
+                <h3 class="fw-bolder">Missions</h3>
+                <i class="fa-solid fa-arrow-right text-white p-2 bg-danger rounded-circle" style="font-size: 14px"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12 position-relative mt-lg-0 mt-4 p-2">
+            <img
+              width="100%"
+              height="550px"
+              src="./assets/topic-humans-in-space.webp"
+              style="filter: brightness(0.5)"
+            />
+            <div class="carousel-caption start-0 text-white text-start p-3 col-12">
+              <div class="d-flex justify-content-between pe-0 align-items-center">
+              <h3 class="fw-bolder">Humans In Space</h3>
+              <i class="fa-solid fa-arrow-right text-white p-2 bg-danger rounded-circle" style="font-size: 14px"></i>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 position-relative mt-lg-0 mt-4 4 p-2">
+            <img
+              width="100%"
+              height="550px"
+              src="./assets/icescapepondsample-lrg-jpg.webp"
+              style="filter: brightness(0.5)"
+            />
+            <div class="carousel-caption start-0 text-white text-start p-3 col-12">
+              <div class="d-flex justify-content-between pe-0 align-items-center">
+                <h3 class="fw-bolder">Climate Change</h3>
+                <i class="fa-solid fa-arrow-right text-white p-2 bg-danger rounded-circle" style="font-size: 14px"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 position-relative mt-lg-0 mt-4 4 p-2">
+            <img
+              width="100%"
+              height="550px"
+              src="./assets/solar-system-illustration.webp"
+              style="filter: brightness(0.5)"
+            />
+            <div class="carousel-caption start-0 text-white text-start p-3 col-12">
+              <div class="d-flex justify-content-between pe-0 align-items-center">
+                <h3 class="fw-bolder">Our Solor System</h3>
+                <i class="fa-solid fa-arrow-right text-white p-2 bg-danger rounded-circle" style="font-size: 14px"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 position-relative mt-lg-0 mt-4 p-2">
+            <img
+              width="100%"
+              height="550px"
+              src="./assets/flat-final.webp"
+              style="filter: brightness(0.5)"
+            />
+            <div class="carousel-caption start-0 text-white text-start p-3 col-12">
+              <div class="d-flex justify-content-between pe-0 align-items-center">
+                <h3 class="fw-bolder">Universe</h3>
+                <i class="fa-solid fa-arrow-right text-white p-2 bg-danger rounded-circle" style="font-size: 14px"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 position-relative mt-lg-0 mt-4 p-2">
+            <img
+              width="100%"
+              height="550px"
+              src="./assets/nasa-cart-image.webp"
+              style="filter: brightness(0.5)"
+            />
+            <div class="carousel-caption start-0 text-white text-start p-3 col-12">
+              <div class="d-flex justify-content-between pe-0 align-items-center">
+                <h3 class="fw-bolder">Science News</h3>
+                <i class="fa-solid fa-arrow-right text-white p-2 bg-danger rounded-circle" style="font-size: 14px"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12 position-relative mt-lg-0 mt-4 p-2">
+            <img
+              width="100%"
+              height="550px"
+              src="./assets/aero-topic-card.webp"
+              style="filter: brightness(0.5)"
+            />
+            <div class="carousel-caption start-0 text-white text-start p-3 col-12">
+              <div class="d-flex justify-content-between pe-0 align-items-center">
+                <h3 class="fw-bolder">Aeronautics</h3>
+                <i class="fa-solid fa-arrow-right text-white p-2 bg-danger rounded-circle" style="font-size: 14px"></i>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 position-relative mt-lg-0 mt-4 p-2">
+            <img
+              width="100%"
+              height="550px"
+              src="./assets/nasa_technology1.webp"
+              style="filter: brightness(0.5)"
+            />
+            <div class="carousel-caption start-0 text-white text-start p-3 col-12">
+              <div class="d-flex justify-content-between pe-0 align-items-center">
+                <h3 class="fw-bolder">Technology</h3>
+                <i class="fa-solid fa-arrow-right text-white p-2 bg-danger rounded-circle" style="font-size: 14px"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+<!------------------------------------------------------------------------ FOOTER --------------------------------------------------------------------------------------------->
+<div class="d-flex justify-content-around p-2 bg-dark text-white fw-bold">
+  <p class="m-0">MADE BY HAJRA ASHRAF AND SANA ATHESHAM</p>
+</div>
+<footer class="bg-black p-3 py-2">
+  <div class="container-xxl" style="font-family: publicSans;">
+
+      <div class="col-12 my-4">
+            <img width="70px" src="./assets/nasa-logo.svg" alt="nasa logo">
+      </div>
+
+      <div class="row col-lg-12 text-white p-0">
+        
+        <div class="col-lg-3 col-md-4 me-md-5">
+          <h5 class="fw-bolder my-3">The National Aeronautics and Space Administration</h5>
+          <p class="text-secondary">NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery.</p>
+          <p>About NASA's Mission</p>
+          <h6 class="fw-bold">Join Us
+            <i class="fa-solid fa-arrow-right text-white p-1 bg-danger rounded-circle" style="font-size: 10px"></i>
+          </h6>
+        </div>
+
+      <div class="footer-links col-xl-6 col-lg-5 col-md-6 col-sm-12">
+        <ul class="list-unstyled d-flex flex-wrap col-12 gap-1">
+          <li class="fw-medium small-text pe-xl-2 pe-lg-0">Home</li>
+          <li class="fw-medium small-text pe-xl-2 pe-lg-0">Aeronautics</li>
+          <li class="fw-medium small-text pe-xl-2 pe-lg-0">Humans in Space</li>
+          <li class="fw-medium small-text pe-xl-2 pe-lg-0">News & Events</li>
+          <li class="fw-medium small-text pe-xl-2 pe-lg-0">Earth & Climate</li>
+          <li class="fw-medium small-text pe-xl-2 pe-lg-0">Learning Resources</li>
+          <li class="fw-medium small-text pe-xl-2 pe-lg-0">The Solar System</li>
+          <li class="fw-medium small-text pe-xl-2 pe-lg-0">The Universe</li>
+          <li class="fw-medium small-text pe-xl-2 pe-lg-0">Multimedia</li>
+          <li class="fw-medium small-text pe-xl-2 pe-lg-0">NASA+  
+            <button class="live-btn bg-transparent border-danger border-1 text-white fw-light" style="font-size: 10px !important;">LIVE</button>
+          </li>
+          <li class="fw-medium small-text pe-xl-2 pe-lg-0">NASA en Español</li>
+          <li  class="fw-medium small-text pe-xl-2 pe-lg-0">Technology</li>
+          <li class="fw-medium small-text pe-xl-2 pe-lg-0">About NASA</li>
+          <li class="fw-medium small-text pe-xl-2 pe-lg-0">Missions</li>
+          <li class="fw-medium small-text pe-xl-2 pe-lg-0">Science</li>
+        </ul>
+      </div>
+
+
+        <div class="col-lg-auto col-md-4 mt-55t-md-0">
+          <h6 class="text-secondary fw-bolder">Follow NASA</h6>
+          <div class="d-flex mb-4 gap-3 mt-3">
+            <div>
+              <i class="fa-brands fa-facebook-f p-2 rounded-circle bg-dark fs-5"></i>
+            </div>
+            <div>
+              <i class="fa-brands fa-instagram p-2 rounded-circle bg-dark fs-5"></i>
+            </div>
+            <div>
+              <i class="fa-brands fa-x-twitter p-2 rounded-circle bg-dark fs-5"></i>
+            </div>
+            <div>
+              <i class="fa-brands fa-youtube p-2 rounded-circle bg-dark fs-5"></i>
+            </div>
+          </div>
+          <p class="small-text">More NASA Social Accounts</p>
+          <p class="small-text">NASA Newsletters</p>
+        </div>
+
+        <div class="border-top border-secondary my-2 col-lg-12 col-md-7 p-0" style="font-family: poppines;">
+          <ul class="list-unstyled mt-3 row col-12 text-darkGray justify-content-between">
+              <li class="fw-medium small-text col-xl-auto col-lg-4 col-md-4 col-6 p-1">Sitemap</li>
+              <li class="fw-medium small-text col-xl-auto col-lg-4 col-md-4 col-6 p-1">For Media</li>
+              <li class="fw-medium small-text col-xl-auto col-lg-4 col-md-4 col-6 p-1">Privacy Policy</li>
+              <li class="fw-medium small-text col-xl-auto col-lg-4 col-md-4 col-6 p-1">FOIA</li>
+              <li class="fw-medium small-text col-xl-auto col-lg-4 col-md-4 col-6 p-1">No FEAR Act</li>
+              <li class="fw-medium small-text col-xl-auto col-lg-4 col-md-4 col-6 p-1">Office of the IG</li>
+              <li class="fw-medium small-text col-xl-auto col-lg-4 col-md-4 col-6 p-1">Budget & Annual Reports</li>
+              <li class="fw-medium small-text col-xl-auto col-lg-4 col-md-4 col-6 p-1">Agency Financial Reports</li>
+              <li class="fw-medium small-text col-xl-auto col-lg-4 col-md-4 col-6 p-1">Contact NASA</li>
+              <li class="fw-medium small-text col-xl-auto col-lg-4 col-md-4 col-6 p-1">Accessibility</li>
+          </ul>
+      </div>
+
+      <div class="col-lg-12 mt-2 p-1">
+        <ul class="list-unstyled row col-12 text-lightGray">
+
+          <li class="me-2 d-flex gap-2 p-0 col-xl-3 col-lg-4 mt-2 small-text">
+            <div class="">Page Last Updated:</div>
+            <div class="fw-bold">Jun 01, 2024</div>
+          </li>
+
+
+          <li class="me-2 d-flex gap-2 p-0 col-xl-3 col-lg-4 mt-2 small-text">
+            <div>Page Editor:</div>
+            <div class="fw-bold">Sarah A. Loff</div>
+          </li>
+
+          <li class="me-2 d-flex gap-2 p-0 col-xl-3 col-lg-4 mt-2 small-text">
+            <div class="col-auto">Responsible NASA Official:</div>
+            <div class="col-auto fw-bold">Abigail Bowman</div>
+          </li>
+
+        </ul>
+      </div>
+      </div> <!-- main row close div -->
+  </div> <!-- close container -->
+</footer>   
+
+
+    </div> <!-- main container -->
+
+    <script src="bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>
